@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madings - Platform Mading Online</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        p {
+            margin: 5px 0 0;
+            font-size: 1.2em;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #4CAF50;
+        }
+
+        main {
+            padding: 40px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        footer {
+            background-color: #4CAF50;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            position: relative;
+            width: 100%;
+            margin-top: 20px;
+            clear: both; /* Mengatasi floating element di dalam main */
+        }
+
+        .mading-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .mading-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            width: 300px;
+            transition: transform 0.3s;
+        }
+
+        .mading-card:hover {
+            transform: scale(1.05);
+        }
+
+        .mading-card h3 {
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+
+        .mading-card p {
+            color: #555;
+            font-size: 1em;
+            line-height: 1.4;
+        }
+
+        
+        .feature-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .feature-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            width: 300px;
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: scale(1.05);
+        }
+
+        .feature-card h3 {
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+
+        .feature-card p {
+            color: #555;
+            font-size: 1em;
+            line-height: 1.4;
+        }
+
+        .about-container {
+            text-align: center;
+            padding: 40px;
+        }
+
+        .about-container h2 {
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+
+              .contact-container {
+            text-align: center;
+            padding: 40px;
+        }
+
+        .contact-container h2 {
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Madings</h1>
+        <p>Platform Mading Online</p>
+    </header>
+
+    <div class="navbar">
+        <a href="#home" onclick="scrollToSection('home')">Home</a>
+        <a href="#fitur" onclick="scrollToSection('features')">Fitur</a>
+        <a href="#tentang" onclick="scrollToSection('about')">Tentang</a>
+        <a href="#contact" onclick="scrollToSection('contact')">Kontak</a>
+    </div>
+
+    <main id="home">
+        <h2>Selamat datang di Madings</h2>
+        <p>Jelajahi dunia kreativitas melalui platform mading interaktif kami. Bergabung sekarang dan ungkapkan potensi artistik Anda!</p>
+
+        <!-- Konten Mading -->
+        <div class="mading-container">
+            <!-- Kartu-kartu Mading -->
+            <div class="mading-card">
+                <h3>Kelas Seni</h3>
+                <p>Ikuti kelas seni online kami untuk mempelajari teknik baru dan meningkatkan keterampilan Anda. Temukan kegembiraan dalam berkarya!</p>
+            </div>
+
+            <div class="mading-card">
+                <h3>Workshop Fotografi</h3>
+                <p>Explore seni fotografi dengan workshop interaktif kami. Tangkap momen dan ceritakan kisah melalui lensa Anda.</p>
+            </div>
+
+            <div class="mading-card">
+                <h3>Tantangan Desain</h3>
+                <p>Ikuti tantangan desain kami dan tunjukkan kreativitas Anda. Hadiah menarik menanti para pemenang!</p>
+            </div>
+
+            <div class="mading-card">
+                <h3>informasi</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vel eveniet rem nam eos temporibus voluptatibus maxime fugiat, veniam, expedita cupiditate excepturi quo. Blanditiis iusto deleniti voluptatem maxime, natus fuga.</p>
+            </div>
+
+            <div class="mading-card">
+                <h3>informasi</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vel eveniet rem nam eos temporibus voluptatibus maxime fugiat, veniam, expedita cupiditate excepturi quo. Blanditiis iusto deleniti voluptatem maxime, natus fuga.</p>
+            </div>
+
+            <div class="mading-card">
+                <h3>informasi</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vel eveniet rem nam eos temporibus voluptatibus maxime fugiat, veniam, expedita cupiditate excepturi quo. Blanditiis iusto deleniti voluptatem maxime, natus fuga.</p>
+            </div><div class="mading-card">
+                <h3>informasi</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vel eveniet rem nam eos temporibus voluptatibus maxime fugiat, veniam, expedita cupiditate excepturi quo. Blanditiis iusto deleniti voluptatem maxime, natus fuga.</p>
+            </div><div class="mading-card">
+                <h3>informasi</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vel eveniet rem nam eos temporibus voluptatibus maxime fugiat, veniam, expedita cupiditate excepturi quo. Blanditiis iusto deleniti voluptatem maxime, natus fuga.</p>
+            </div><div class="mading-card">
+                <h3>informasi</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vel eveniet rem nam eos temporibus voluptatibus maxime fugiat, veniam, expedita cupiditate excepturi quo. Blanditiis iusto deleniti voluptatem maxime, natus fuga.</p>
+            </div><div class="mading-card">
+                <h3>informasi</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vel eveniet rem nam eos temporibus voluptatibus maxime fugiat, veniam, expedita cupiditate excepturi quo. Blanditiis iusto deleniti voluptatem maxime, natus fuga.</p>
+            </div><div class="mading-card">
+                <h3>informasi</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vel eveniet rem nam eos temporibus voluptatibus maxime fugiat, veniam, expedita cupiditate excepturi quo. Blanditiis iusto deleniti voluptatem maxime, natus fuga.</p>
+            </div><div class="mading-card">
+                <h3>informasi</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vel eveniet rem nam eos temporibus voluptatibus maxime fugiat, veniam, expedita cupiditate excepturi quo. Blanditiis iusto deleniti voluptatem maxime, natus fuga.</p>
+            </div><div class="mading-card">
+                <h3>informasi</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vel eveniet rem nam eos temporibus voluptatibus maxime fugiat, veniam, expedita cupiditate excepturi quo. Blanditiis iusto deleniti voluptatem maxime, natus fuga.</p>
+            </div><div class="mading-card">
+                <h3>informasi</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vel eveniet rem nam eos temporibus voluptatibus maxime fugiat, veniam, expedita cupiditate excepturi quo. Blanditiis iusto deleniti voluptatem maxime, natus fuga.</p>
+            </div>
+        </div>
+    </main>
+
+    <main id="fitur">
+        <h2>Temukan Fitur-Fitur Madings</h2>
+        <p>Terokai berbagai fitur yang ditawarkan Madings untuk meningkatkan pengalaman kreatif Anda.</p>
+    
+        <!-- Konten Fitur -->
+        <div class="feature-container">
+            <div class="feature-card">
+                <h3>Kursus Interaktif</h3>
+                <p>Ikuti kursus interaktif kami dan pelajari teknik seni yang baru dari instruktur berpengalaman.</p>
+            </div>
+    
+            <div class="feature-card">
+                <h3>Kolaborasi Komunitas</h3>
+                <p>Terhubung dengan sesama seniman, bagikan karya Anda, dan berkolaborasi dalam proyek-proyek menarik di dalam komunitas kreatif kami.</p>
+            </div>
+    
+            <div class="feature-card">
+                <h3>Workshop Virtual</h3>
+                <p>Ikuti workshop virtual untuk meningkatkan keterampilan Anda. Berinteraksi dengan instruktur dan dapatkan pengalaman praktis.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>fungsi</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore architecto unde a, ipsam ea in quidem animi aut numquam quibusdam autem illo voluptas velit et totam, cum ullam itaque commodi.</p>
+            </div>
+            <div class="feature-card">
+                <h3>fungsi</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore architecto unde a, ipsam ea in quidem animi aut numquam quibusdam autem illo voluptas velit et totam, cum ullam itaque commodi.</p>
+            </div>
+            <div class="feature-card">
+                <h3>fungsi</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore architecto unde a, ipsam ea in quidem animi aut numquam quibusdam autem illo voluptas velit et totam, cum ullam itaque commodi.</p>
+            </div>
+         
+            <!-- Tambahkan kartu fitur lainnya sesuai kebutuhan -->
+        </div>
+    </main>
+
+    <!-- Konten About -->
+    <main id="tentang">
+    <div class="about-container">
+        <h2>Tentang Madings</h2>
+        <p>Madings adalah platform online terkemuka yang didedikasikan untuk mengembangkan kreativitas dan ekspresi artistik. Misi kami adalah menyediakan ruang di mana para seniman, kreator, dan pembelajar dapat berkumpul untuk berbagi, berkolaborasi, dan saling menginspirasi.</p>
+
+        <p>Dengan berbagai kursus interaktif, workshop virtual, dan komunitas yang bersemangat, Madings adalah tempat yang sempurna untuk meningkatkan keterampilan Anda, terhubung dengan individu sejenis, dan menjelajahi kemungkinan kreativitas tanpa batas.</p>
+
+        <p>Bergabunglah dengan kami dalam perjalanan ini dan biarkan Madings menjadi pintu gerbang Anda ke dunia penemuan artistik. Ungkapkan imajinasi Anda, bagikan hasrat Anda, dan menjadi bagian dari komunitas yang merayakan keindahan kreativitas.</p>
+    </div>
+</main> 
+     <main id="contact">
+    <!-- Konten Contact -->
+    <div class="contact-container">
+        <h2>Hubungi Madings</h2>
+            <p>Jika Anda memiliki pertanyaan atau ingin berkomunikasi dengan kami, jangan ragu untuk menghubungi kami. Kami senang mendengar dari Anda!</p>
+    
+            <!-- Informasi Kontak -->
+            <div class="contact-info">
+                <p>Email: KelasXi-k4@gmail.com</p>
+                <p>Telepon: 08531597****</p>
+                <p>Alamat:Smk Al falah bandung</p>
+           
+            <form>
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message" required></textarea>
+    
+                <input type="submit" value="Kirim">
+            </form>
+        </div>
+    </main>
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2022 Madings. Semua hak dilindungi.</p>
+        </footer>
+    
+        <!-- JavaScript untuk animasi scroll -->
+        <script>
+            function scrollToSection(sectionId) {
+                const section = document.getElementById(sectionId);
+                if (section) {
+                    window.scrollTo({
+                        top: section.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        </script>
+    </body>
+    </html>
+    
